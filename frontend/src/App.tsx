@@ -156,7 +156,9 @@ function App() {
     const response = await fetch("http://localhost:5001/submit", {
       method: "POST",
       body: JSON.stringify(body),
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
     const responseJson = await response.json();
     console.log(responseJson);

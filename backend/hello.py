@@ -1,11 +1,10 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, g
 from google import genai
 import os
 from flask_cors import CORS
 from google import genai
 from google.genai import types
 import sqlite3
-from flask import g
 
 DATABASE = '/Users/alexdeutch/Documents/code/stryker-project/backend/database.db'
 
@@ -56,7 +55,7 @@ def init_db():
     print('Initialized the database.')
 
 @app.teardown_appcontext
-def close_connection():
+def close_connection(exception):
     db = getattr(g, '_database', None)
     if db is not None:
         db.close()
