@@ -56,7 +56,7 @@ def init_db():
     print('Initialized the database.')
 
 @app.teardown_appcontext
-def close_connection(exception):
+def close_connection():
     db = getattr(g, '_database', None)
     if db is not None:
         db.close()
