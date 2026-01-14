@@ -6,7 +6,6 @@ from google import genai
 from google.genai import types
 import sqlite3
 from flask import g
-from flask_sqlalchemy import SQLAlchemy
 
 DATABASE = '/Users/alexdeutch/Documents/code/stryker-project/backend/database.db'
 
