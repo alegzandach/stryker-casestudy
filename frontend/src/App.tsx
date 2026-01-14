@@ -161,7 +161,6 @@ function App() {
       },
     });
     const responseJson = await response.json();
-    console.log(responseJson);
   };
 
   const transformInvoiceWebToDB = (invoice: InvoiceWeb) => {
