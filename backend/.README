@@ -1,0 +1,13 @@
+# INSTRUCTIONS
+
+1. activate env, `. .venv/bin/activate`
+2. in your .env, provide a gemini api key and port number
+
+```
+GEMINI_API_KEY=YOUR_KEY
+FLASK_RUN_PORT=5001
+```
+
+3. run app `flask --app app run`
+
+database is stored at database.db
