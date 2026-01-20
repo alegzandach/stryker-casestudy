@@ -1,7 +1,7 @@
 # BACKEND INSTRUCTIONS
 
 1. activate env, `. .venv/bin/activate`
-2. add a .env, provide a gemini api key and port number
+2. add a .env to the backend folder, provide a gemini api key and port number
 
 ```
 GEMINI_API_KEY=YOUR_KEY
